@@ -1,0 +1,8 @@
+th, td {
+    border: 4px solid yellow;
+    
+    padding: 5px 10px;
+  }
+  table{
+    margin-top: 15px;
+  }

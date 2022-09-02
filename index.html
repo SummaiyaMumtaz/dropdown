@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiobj</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 class="text-center text-danger"> MARKSHEET </h3>
+<div class="row ">
+    <div class="bg-warning col-md-6">
+
+        <h3>dropdown</h3>
+        
+    <select onchange="DropDownb()" id="Sname">
+    </select>
+    
+    <select id="Subjects" disabled></select>
+    <button onclick="searchdp()">search</button>
+
+    <table id="tablA" hidden>
+        <tr id="able" >
+            <th>Mid</th>
+            <th>Final</th>
+            <th>TOTAL MARKS</th>
+        </tr>
+    
+    <tr id="row" >
+          <td>-</td>
+          <td>-</td>
+           <td>-</td>
+    </tr> 
+</table>
+
+    </div>
+
+ <div class="bg-dark text-light col-md-6">
+    <h3>Search result</h3>
+    <input type="text" placeholder="student name" id="student">
+    <input type="text" name="" placeholder="subject" id="subj">
+    <button onclick="Search()">Search</button>
+    <table id="tabl" hidden>
+            <tr id="able" >
+                <th>Mid</th>
+                <th>Final</th>
+                <th>TOTAL MARKS</th>
+            </tr>      
+        <tr id="rowtwo" >
+              <td>-</td>
+              <td>-</td>
+               <td>-</td>
+        </tr>    
+    </table>
+ </div>
+
+</div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
